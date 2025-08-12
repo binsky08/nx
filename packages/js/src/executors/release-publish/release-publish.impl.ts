@@ -1,7 +1,6 @@
 import {
   detectPackageManager,
   getPackageManagerCommand,
-  getPackageManagerVersion,
   ExecutorContext,
   readJsonFile,
 } from '@nx/devkit';
@@ -240,10 +239,10 @@ Please update the local dependency on "${depName}" to be a valid semantic versio
                 )
               ) {
                 console.error('npm dist-tag add error:');
-                if (stdoutData.error.summary) {
+                if (stdoutData.error?.summary) {
                   console.error(stdoutData.error.summary);
                 }
-                if (stdoutData.error.detail) {
+                if (stdoutData.error?.detail) {
                   console.error(stdoutData.error.detail);
                 }
 
