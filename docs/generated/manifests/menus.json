@@ -2596,14 +2596,6 @@
                             "disableCollapsible": false
                           },
                           {
-                            "id": "upgrade-native",
-                            "path": "/technologies/react/react-native/api/generators/upgrade-native",
-                            "name": "upgrade-native",
-                            "children": [],
-                            "isExternal": false,
-                            "disableCollapsible": false
-                          },
-                          {
                             "id": "web-configuration",
                             "path": "/technologies/react/react-native/api/generators/web-configuration",
                             "name": "web-configuration",
@@ -6933,6 +6925,14 @@
         "id": "recipes",
         "isExternal": false,
         "children": [
+          {
+            "name": "Improving your Time to Green (TTG)",
+            "path": "/ci/recipes/improving-ttg",
+            "id": "improving-ttg",
+            "isExternal": false,
+            "children": [],
+            "disableCollapsible": false
+          },
           {
             "name": "Set Up CI",
             "path": "/ci/recipes/set-up",

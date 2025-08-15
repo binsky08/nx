@@ -90,23 +90,18 @@ export default defineMarkdocConfig({
       attributes: {
         cols: {
           type: 'Number',
-          required: true,
         },
         smCols: {
           type: 'Number',
-          required: true,
         },
         mdCols: {
           type: 'Number',
-          required: true,
         },
         lgCols: {
           type: 'Number',
-          required: true,
         },
         moreLink: {
           type: 'String',
-          required: false,
         },
       },
     },
@@ -204,6 +199,15 @@ export default defineMarkdocConfig({
         appearance: {
           type: 'String',
           default: 'default',
+        },
+      },
+    },
+    index_page_cards: {
+      render: component('./src/components/markdoc/IndexPageCards.astro'),
+      attributes: {
+        path: {
+          type: 'String',
+          required: true,
         },
       },
     },
